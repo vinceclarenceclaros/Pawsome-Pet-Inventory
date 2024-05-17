@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading clearfix">
+          <strong>
+            <span class="glyphicon glyphicon-transfer"></span>
+            <span>Login Trail</span>
+          </strong>
+        </div>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th class="text-center" style="width: 50px;">ID</th>
+              <th class="text-center">Username</th>
+              <th class="text-center" style="width: 25%;">Time</th>
+              <th class="text-center" style="width: 25%;">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php foreach ($login_trail as $login_trail): ?>
+            <tr>
+              <td class="text-center"><?php echo remove_junk(ucwords($login_trail['id'])) ?></td>
+              <td><?php echo remove_junk(ucwords($login_trail['name'])) ?></td>
+              <td><?php echo read_date($login_trail['login_time']) ?></td>
+              <td class="text-center"><?php echo remove_junk(ucwords($login_trail['activity'])) ?></td>
+            </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

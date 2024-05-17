@@ -1,0 +1,11 @@
+Update as of 02/18/2024 - 10:20 AM
+
+Done
+- Access level control (no access if basic staff/user)
+- Error handling
+- [admin] edit user and delete user (edit user and delete user is done (hard delete) )
+- Notif on low stock products
+- Filtered search on product list table
+- Added Deactivated/Active user status login
+- Change password validation
+- Applied neccessary permission to User
